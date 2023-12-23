@@ -1,22 +1,17 @@
 .text
 lw $s1,num
-li $s0,0
 lw $s2,address
 loop:
-	slti $t0,$s0,10
-	beq $t0,$zero,exit
-	sll $t1,$s0,2
-	add $t1,$t1,$s2
-	add $t2,$s1,$s0
-	#li $v0,5
-	#syscall	#lire tableau
-	#move $t2,$v0
-	sw $t2,0($t1)
-	addi $s0,$s0,1
-	j loop
+slti $t0,$s0,10
+beq $t0,$zero,exit
+sll $t1,$s0,2
+add $t1,$t1,$s2
+add $t2,$s1,$s0
+sw $t2,0($t1)
+addi $s0,$s0,1
+j loop
 exit:
-	li $v0,10
-	syscall
+syscall
 
 .data
 num: .word 3
