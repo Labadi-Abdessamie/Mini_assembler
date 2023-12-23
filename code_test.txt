@@ -1,42 +1,23 @@
-# file : exp_1
-# author : Labadi Abdessamie 
-# Groupe : 04
-# this code is for evalue expression 5x + 3y + z
-
 .text
-exp_1:
-move $a1,$ra
+lw $s1,num
+li $s0,0
+lw $s2,address
+loop:
+	slti $t0,$s0,10
+	beq $t0,$zero,exit
+	sll $t1,$s0,2
+	add $t1,$t1,$s2
+	add $t2,$s1,$s0
+	#li $v0,5
+	#syscall	#lire tableau
+	#move $t2,$v0
+	sw $t2,0($t1)
+	addi $s0,$s0,1
+	j loop
+exit:
+	li $v0,10
+	syscall
 
-la $a0,variable_1
-jal print_string
-jal scan_int
-move $s0,$v0
-
-la $a0,variable_2
-jal print_string
-jal scan_int
-move $s1,$v0
-
-la $a0,variable_3
-jal print_string
-jal scan_int
-move $s2,$v0
-
-mul $t0,$s0,5
-mul $t1,$s1,3
-add $t0,$t0,$t1
-add $t0,$t0,$s2
-
-
-move $a0,$t0
-
-
-jr $a1
-
-
-.data 
-variable_1: .asciiz "Entrer x : "
-variable_2: .asciiz "Entrer y : "
-variable_3: .asciiz "Entrer z : "
-
-.include "tools.asm"
+.data
+num: .word 3
+address : .word 268501024
