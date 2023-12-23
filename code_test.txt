@@ -1,0 +1,42 @@
+# file : exp_1
+# author : Labadi Abdessamie 
+# Groupe : 04
+# this code is for evalue expression 5x + 3y + z
+
+.text
+exp_1:
+move $a1,$ra
+
+la $a0,variable_1
+jal print_string
+jal scan_int
+move $s0,$v0
+
+la $a0,variable_2
+jal print_string
+jal scan_int
+move $s1,$v0
+
+la $a0,variable_3
+jal print_string
+jal scan_int
+move $s2,$v0
+
+mul $t0,$s0,5
+mul $t1,$s1,3
+add $t0,$t0,$t1
+add $t0,$t0,$s2
+
+
+move $a0,$t0
+
+
+jr $a1
+
+
+.data 
+variable_1: .asciiz "Entrer x : "
+variable_2: .asciiz "Entrer y : "
+variable_3: .asciiz "Entrer z : "
+
+.include "tools.asm"
