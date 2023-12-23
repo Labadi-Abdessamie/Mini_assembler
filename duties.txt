@@ -11,6 +11,8 @@
     -fonction de recherche de op_code pour les I instructions
     -
 
+the la instruction we have to discuss about it there is many how to do it 
 
+        
 
 - 32 bits instruction register ()  
