@@ -1,0 +1,12 @@
+
+.data
+num : .asciiz 3                 10010000
+address : .asciiz 268501024      10010003
+y : .word                       10010006    
+hh : .word                      1001000A
+
+.text
+
+add $t1,$t1,$s2
+sub $v0,$s3,$a0
+
