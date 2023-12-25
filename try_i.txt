@@ -1,3 +1,9 @@
+// rana drna kifah nstoko les varibales w les adress ta3hom en decimal apres ki n7bo njbdohom en hexa nrml b9at brk nzido des cas ta3 les types de variables 
+// li raho ba y5dm ychouflna hado les instructions ta3 el  i li homa 9 je pense 8 basic   mais ( la w lw w sw ) kifay ynkteb el code machine ta3hom et 
+wech homa les cas tawa3hom .
+
+
+
 la $t1,adress
 
 adres 32 bits 
