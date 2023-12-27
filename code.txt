@@ -1,7 +1,0 @@
-.text
-
-ori $t1,$t2,-100
-andi $t1,$t2,100
-addi $s0,$t9,50
-slti $s0,$t9,50
-lui $t3,99
