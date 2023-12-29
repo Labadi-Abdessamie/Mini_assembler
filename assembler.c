@@ -2,7 +2,7 @@
 #include "register_map.c"
 #include "fonctions.c"
 #include "compile.c"
-//yes
+
 /*  
     !   NAME : Mini Assembler works in specific form of code.txt
     !   The supported instructions : R : add,sub,and,or,slt,sll,jr
