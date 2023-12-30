@@ -12,7 +12,6 @@
         !- LABADI ABDESSAMIE
         !- HAMDI MUSTAPHA
         !- KACEM MOHAMED KARIM BENABDELLAH
-        !- MENDJOUR LOUNIS 
     !   The conditions of the code.txt
     !   Register syntax         >>>>>       with their names not their numbers >>>  $t1 (valid) $9 (invalid)
     !   Variable syntax         >>>>>       name : .type value
