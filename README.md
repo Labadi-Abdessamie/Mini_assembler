@@ -13,3 +13,7 @@
     !   instruction syntax      >>>>>       ins(space)(registers/labels/variables/immediates)
     !                                       between each registers or reg-imm   reg-lab
     !                                       no spaces  just ,  Ex    beq $t1,$t0,end
+
+
+    !  How to use it : You will write your assembly code in file .txt  "code.txt".
+    !  The result will be out in file text   "out.txt".
