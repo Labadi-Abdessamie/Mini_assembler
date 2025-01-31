@@ -3,7 +3,7 @@
     !                                I : la,lw,sw,beq,andi,ori,slti,addi,lui,addui
     !                                J : j , jal
     !   The Authors :
-        !- LABADI ABDESSAMIE    star1coach@gmail.com
+        !- LABADI ABDESSAMIE    abdessamie.labadi@gmail.com
         !- HAMDI MUSTAPHA
         !- KACEM MOHAMED KARIM BENABDELLAH
     !   The conditions of the code.txt
